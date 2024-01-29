@@ -41,13 +41,15 @@ li {
 
 main {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .background-video {
     position: absolute;
     z-index: 1;
-    top: -20vw;
-    width: 98vw;
+    top: -12vw;
+    width: 80vw;
     margin: 0 1vw;
 }
 
