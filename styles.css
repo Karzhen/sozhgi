@@ -69,7 +69,7 @@ main {
     /*transition: background, color 2s;*/
     cursor: pointer;
     opacity: 0;
-    transition: opacity, background 4s;
+    transition: opacity 2s, background 1s;
 }
 
 .modal-button:hover {
