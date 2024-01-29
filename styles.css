@@ -36,7 +36,7 @@ ol {
 
 li {
     color: lightgrey;
-    font-size: 32px;
+    font-size: 24px;
     cursor: pointer;
 }
 
@@ -63,6 +63,7 @@ main {
     border-radius: 22px;
     font-size: 48px;
     color: lightgrey;
+    text-align: center;
     padding: 20px;
     display: block;
     transform: translate(-50%, -50%);
