@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(37, 23, 0);
+    overflow-y: hidden;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(37, 23, 0);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+ol {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    color: lightgrey;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+}
+
+.background-video {
+    position: absolute;
+    z-index: 1;
+    top: -20vw;
+    width: 98vw;
+    margin: 0 1vw;
+}
+
+.modal-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid #DAA520;
+    border-radius: 22px;
+    font-size: 4rem;
+    color: lightgrey;
+    padding: 20px;
+    display: block;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /*transition: background, color 2s;*/
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity, background 4s;
+}
+
+.modal-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    /*color: rgba(0, 0, 0, 0.7);*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+    z-index: 2;
+    /*transition: background 2s;*/
+    opacity: 0;
+    transition: opacity 1s;
+}
