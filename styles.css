@@ -61,7 +61,9 @@ main {
     width: 300px;
     top: 50%;
     left: 50%;
-    background: #DAA520;
+    /*background: #DAA520;*/
+    background: linear-gradient(top, #a95, #f2f2f2 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, #a95);
+    background: -webkit-linear-gradient(top, #85742f, #ffde39 25%, #fff6c6 38%, #ffdc5f 63%, #fea 87%, #a95);
     border: 3px solid #DAA520;
     border-radius: 3px;
     font-size: 22px;
@@ -105,7 +107,7 @@ main {
 }
 
 .modal-button:hover {
-    background: #985f08;
+    /*background: #985f08;*/
 }
 
 .overlay {

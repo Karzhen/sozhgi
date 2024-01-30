@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
             overlay.style.opacity = '1';
             button.style.opacity = '1';
         }, 1000); // небольшая задержка
-    }, 2000);
+    }, 5000);
 });
