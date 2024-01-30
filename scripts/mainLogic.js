@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         overlay.style.opacity = '0';
 
         main.appendChild(overlay);
+        button.style.display = 'block';
 
         setTimeout(function() {
             overlay.style.opacity = '1';

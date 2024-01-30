@@ -71,7 +71,7 @@ main {
     text-align: center;
     text-transform: uppercase;
     padding: 20px;
-    display: block;
+    display: none;
     transform: translate(-50%, -50%);
     z-index: 3;
     /*transition: background, color 2s;*/
