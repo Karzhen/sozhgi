@@ -3,21 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
         main = document.querySelector('main');
 
     setTimeout(function() {
-        const button = document.createElement('a');
-        button.textContent = 'Перейти к товарам на маркетплейсе';
-        button.href = 'https://ozon.ru/t/dEgNNnb';
-        button.target = '_blank';
-
+        const button = document.querySelector('.modal-button');
         const overlay = document.createElement('div');
         overlay.classList.add('overlay');
 
         overlay.style.opacity = '0';
-        button.style.opacity = '0';
 
         main.appendChild(overlay);
-        main.appendChild(button);
-
-        button.classList.add('modal-button');
 
         setTimeout(function() {
             overlay.style.opacity = '1';

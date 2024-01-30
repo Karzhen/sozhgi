@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Chakra Petch", sans-serif;
+    font-family: 'Raleway' , sans-serif;
     user-select: none;
 }
 
@@ -56,14 +58,16 @@ main {
 
 .modal-button {
     position: fixed;
+    width: 300px;
     top: 50%;
     left: 50%;
-    background: rgba(0, 0, 0, 0.7);
+    background: #DAA520;
     border: 3px solid #DAA520;
-    border-radius: 22px;
-    font-size: 48px;
-    color: lightgrey;
+    border-radius: 3px;
+    font-size: 22px;
+    color: black;
     text-align: center;
+    text-transform: uppercase;
     padding: 20px;
     display: block;
     transform: translate(-50%, -50%);
@@ -72,11 +76,36 @@ main {
     cursor: pointer;
     opacity: 0;
     transition: opacity 2s, background 1s;
+    overflow: hidden;
+}
+
+.modal-button::before,
+.modal-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 60px;
+    height: 100%;
+    background-color: white;
+    filter: blur(10px);
+    transform: skewX(-45deg);
+}
+
+.modal-button:hover:before,
+.modal-button:focus:before {
+    left: calc(100% + 100px);
+    transition: 1s;
+}
+
+.modal-button:hover:after,
+.modal-button:focus:after {
+    left: calc(100% + 100px);
+    transition: 1s 0.3s;
 }
 
 .modal-button:hover {
-    background: rgba(255, 255, 255, 0.4);
-    /*color: rgba(0, 0, 0, 0.7);*/
+    background: #985f08;
 }
 
 .overlay {
